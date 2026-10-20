@@ -1,6 +1,4 @@
 
-/* Шапка */
-
 .header {
   display: grid;
   grid-template-columns: 1fr 140px 1fr;
@@ -29,19 +27,16 @@
 
 .logo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 130px;
-  height: 100px;
-  border: 5px solid;
-  text-align: center;
-  text-decoration: none;
+  justify-self: center;
 }
 
-.logo span {
-  font-size: 40px;
-  line-height: 30px;
-  letter-spacing: -3px;
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .contacts {
@@ -71,7 +66,7 @@
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0.6)
     ),
-    url("./images/лотос.jpg");
+    url("./images/cover.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -163,7 +158,7 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url("./images/1111.jpg");
+    url("./images/card-lot-01.jpg");
 }
 
 .book {
@@ -172,7 +167,7 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url("./images/2222.png");
+    url("./images/card-lot-02.jpg");
 }
 
 .picture {
@@ -181,7 +176,7 @@
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url("./images/3333.jpg");
+    url("./images/card-lot-03.jpg");
 }
 
 .card h3 {
@@ -224,7 +219,9 @@
 }
 
 .white-logo {
-  color: white;
+  display: block;
+  width: 150px;
+  height: auto;
 }
 
 .about h2 {
@@ -265,7 +262,7 @@
   gap: 40px;
 }
 
-.socials span {
+.socials a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -364,6 +361,7 @@
   .header > .logo {
     grid-column: 1;
     grid-row: 1;
+    justify-self: start;
   }
 
   .header .contacts {
@@ -456,6 +454,10 @@
     height: 200px;
   }
 
+  .white-logo {
+    width: 130px;
+  }
+
   .about h2 {
     margin: 0 0 35px;
   }
@@ -479,4 +481,3 @@
     gap: 25px;
   }
 }
-
