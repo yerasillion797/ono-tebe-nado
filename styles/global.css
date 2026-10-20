@@ -31,3 +31,7 @@ h2 {
   font-size: 40px;
   text-transform: uppercase;
 }
+
+img {
+  max-width: 100%;
+}
